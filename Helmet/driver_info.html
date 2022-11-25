@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Helmet Detection System</title>
-</head>
-<body>
-    <nav class="nav">
-        <img src="logo.png" alt="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="main.html">
+            <img src="images/logo2.png" alt="">
+        </a>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
         <ul>
-            <li> <a href="#" >Menu</a></li>
+            <li> <a class="active" href="#" >Menu</a></li>
             <li> <a href="#" >All Riders</a></li>
             <li> <a href="#" >Detect</a></li>
+            <span>
+                <a href="index.html">Logout</a>
+            </span>
         </ul>
-        <span><a href="index.html">Logout</a></span>
     </nav>
 
-    <div class="text">
-        <h2>Rider Information</h2>
-        <p>The license plate match this rider</p>
-    </div>
-    
-    <div class="content">
-        <div class="box boxx">
-            <div class="one">
-                <h3>Name</h3>
-                <h5>Henry</h5>
 
-                <h3>Phone Number</h3>
-                <h5>029309400039</h5>
+
+    <div class="content">
+      <h2>Rider Information</h2>
+      <p>The license plate match this rider</p>
+    
+        <div class="boxx info">
+            <div class="one">
+                <h4>Richard Beck</h4>
+                <h5>Motor Rider</h5>
             </div>
 
             <div class="two">
-                <h3>Email Adress</h3>
-            <h5>Henry@gmail.com</h5>
-
-            <h3>Physical location</h3>
-            <h5>M-12-GE 390</h5>
+                <span>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h5>94948839382</h5>
+                </span>
+                <hr>
+                <span>
+                    <i class="fa fa-envelope"></i>
+                    <h5>richardbeck@gmail.com</h5>
+                </span>
+                <hr>
+                <span>
+                    <i class="fas fa-credit-card"></i>
+                <h5>M-12-GE 390</h5>
+                </span>
+                <hr>
             </div>
 
         </div>
 
-        
-
         <button class="btn">
             <a href="main.html"> BACK TO UPLOAD PAGE </a>
         </button>
+
+        
     </div>
+    
 </body>
 </html>

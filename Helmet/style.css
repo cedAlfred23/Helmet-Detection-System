@@ -1,30 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
 
 .main{
-    background-image: url(datascience.jpg);
+    background-image: url(images/datascience.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100vh;
-}
-
-.nav{
-    position: fixed;
-    top: 0;
-    min-height: 50px;
-    width: 98%;
-    background-color: #ffffff;
-    z-index: 99;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.501);
-    display: flex;
-     justify-content:space-between;
-     align-items:center;
-     padding: 1%;
 }
 
 .row{
@@ -40,16 +28,20 @@
 .first{
     position: relative;
     background-color: rgb(255, 255, 255);
-    padding: 40px;
+    padding: 40px 40px;
     text-align: left;
-    margin-left: 40px;
-    width: 30%;
+    width: 40%;
+    border-radius: 10px;
 }
 
 .first h1{
     margin-top: 40px;
     font-size: 40px;
     font-weight: 600;
+}
+
+.first h5{
+    padding-top: 20px;
 }
 
 .first p{
@@ -65,11 +57,11 @@
 
 .form input{
     padding: 20px;
-    margin-bottom: 8px;
-    width: 90%;
+    margin-bottom: 20px;
+    width: 100%;
     border: none;
     border-radius: 10px;
-    box-shadow: 3px 3px 2px rgba(175, 175, 175, 0.411);
+    box-shadow: 3px 3px 2px rgba(146, 146, 146, 0.411);
 }
 
 .form span{
@@ -87,6 +79,140 @@
     height: 70px;
 }
 
+.second{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 80vh;
+}
+
+.second img{
+    margin-top: 50px;
+    height: 10%;
+}
+
+.second h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.second p{
+    color: white;
+    margin-bottom: 50px;
+}
+
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(168, 168, 168, 0.501);
+  z-index: 99;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 80px;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+
+.logo img{
+    height: 30%; 
+    width: 30%; 
+}
+
+nav ul li a{
+    color: rgb(3, 38, 113);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn i{
+    margin-left: 30px;
+    color: rgb(3, 38, 113);
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+span{
+    padding-left: 300px;
+}
+span a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(3, 38, 113);
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.content{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+
+.content p{
+    padding-bottom: 100px;
+}
+
+.boxx{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    display: block;
+    width: 50%;
+    height: 400px;
+    background-color: rgb(247, 248, 254);
+    left: 25%;
+    border-radius: 10px;
+}
+
+.go{
+    padding: 80px;
+    justify-content: space-between;
+}
+
+.go img{
+    width: 20%;
+}
+
+.go h3{
+    padding-top: 30px;
+}
+
 button{
     width: 100%;
     padding: 15px;
@@ -102,150 +228,15 @@ button a{
 
 .btn{
     position: absolute;
-    top: 500px;
-    right: 20%;
+    top: 600px;
+    /* right: 40%; */
+    left: 57%;
     width: 20%;
-    /* height: 50px; */
     background-color: rgb(160, 156, 207);
     border: none;
     border-radius: 5px;
 }
 
-.first h5{
-    padding-top: 50px;
-    font-size: 15px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.first h5 a{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
-}
-
-.second{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 40px;
-    width: 40%;
-    height: 80vh;
-}
-
-.second img{
-    margin-top: 50px;
-    width: 150px;
-}
-
-.second h2{
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
-}
-
-.second p{
-    color: white;
-    margin-bottom: 50px;
-}
-
-.nav img{
-    position: relative;
-    width: 150px;
-    left: 200px;
-}
-
-ul{
-    width: 20%;
-    display: inline-flex;
-    justify-content: space-around;
-}
-
-li{
-    list-style: none;
-}
-
-ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: rgb(3, 38, 113);
-}
-
-span a{
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(3, 38, 113);
-}
-
-.text{
-    position: absolute;
-    width: 100%;
-    top: 150px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.driver{
-    left: 40%;
-}
-
-.text h2{
-    font-size: 40px;
-}
-
-.content{
-    position: absolute;
-    width: 100%;
-    top: 30%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.driver-content{
-    width: 80%;
-    left: 10%;
-}
-
-.box{
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    display: block;
-    width: 50%;
-    background-color: rgb(247, 248, 254);
-    left: 25%;
-}
-
-.boxx{
-    display: inline-flex;
-    justify-content: space-around;
-    padding-bottom: 70px;
-}
-
-.one, .two{
-    text-align: left;
-}
-
-.go{
-    padding: 100px;
-}
-
-.box h3 span a{
-    font-weight: 300;
-}
-.box h3{
-    padding-top: 60px;
-    background-color: transparent;
-}
-
-.box h6{
-    background-color: transparent;
-    font-weight: 300;
-}
 
 table{
     position: absolute;
@@ -300,149 +291,292 @@ td a{
     color: rgb(160, 156, 207);
 }
 
+.ctn{
+    margin: 40px;
+}
+
  .contents{
     position: absolute;
     width: 100%;
     height: 50vh;
-    background-color: aqua;
+    background-color: darkblue;
     top: 30%;
     text-align: center;
     justify-content: space-around;
 }
 
-@media(max-width: 1200px){
-    .first h1{
-        margin-top: 20px;
-        font-size: 30px;
-        font-weight: 600;
-    }
-    
-    .first p{
-        font-weight: 300;
-        margin-bottom: 70px;
-    }
+@media (max-width: 1274px){
+    nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: rgb(213, 213, 213);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: darkblue;
+  }
 }
 
-@media(max-width: 1000px){
-    .main{
-        position: absolute;
-        padding-top: 100px;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-
-    .first p{
-        font-weight: 300;
-        margin-bottom: 50px;
-    }
-
-    .first{
-        padding: 20px;
-        text-align: left;
-        margin-left: 20px;
-        width: 80%;
-    }
-
-    .size1{
-        height: 20px;
-    }
-
-    .second{
-        display: none;
-    }
-
-    .row{
-        justify-content: space-evenly;
-        text-align: center;
-        align-items: center;
-    }
-
-    .nav img{
-        position: relative;
-        width: 100px;
-        left: 20px;
-    }
-
-    ul{
-        width: 50%;
-        display: flex;
-        margin: auto;
-    }
-
-    ul li a{
-        text-decoration: none;
-        font-size: 15px;
-        color: rgb(3, 38, 113);
-    }
-
-    span a{
-        font-size: 15px;
-        margin-right: 30px;
-    }
-
-    button{
-        width: 60%;
-        /* height: 20%; */
-    }
-
-    button{
-        left: 0%;
-        width: 100%;
-    }
-
-    .btn{
-        width: 60%;
-        left: auto;
-        /* height: 0%; */
-    }
+.info{
+  width: 50%;
+  left: 25%;
 }
 
-@media (max-width: 700px) {
-    .main{
-        padding-top: 100px;
-        }
-
-        .first{
-            padding: 20px;
-            text-align: left;
-            margin-left: 0px;
-            width: 90%;
-        }
-
-        .first h5{
-            padding-top: 70px;
-            
-        }
-    
-        .row{
-            margin: 10px;
-        }
-        .second{
-            display: none;
-        }
-
-    .box{
-        width: 80%;
-        background-color: rgb(247, 248, 254);
-        left: 10%;
-        margin-top: 50px;
-    }
-
-    button{
-        position: absolute;
-        left: 0%;
-        width: 100%;
-        margin-bottom: 20px;
-
-    }
-
-    .btn{
-        margin-top: 50px;
-        width: 80%;
-        left: 10%;
-
-        /* bottom: 20px; */
-    }
+.one{
+    position: relative;
+    border-radius: 12px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(168, 168, 168, 0.501);
+    padding: 20px 12px 12px 25px;
+    /* margin: 10px 30px; */
+    width: 50%;
+    left: 25%;
+    margin-bottom: 30px;
 }
 
+.one h5{
+    font-weight: 600;
+    color: rgb(193, 193, 193);
+}
+.two{
+    position: relative;
+    border-radius: 12px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(168, 168, 168, 0.501);
+    padding: 20px 12px 12px 25px;
+    /* margin: 10px 30px; */
+    width: 50%;
+    left: 25%;
+}
+
+.two h5{
+    font-weight: 400;
+}
+
+.two span{
+    display: inline-flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.two span i{
+    padding-right: 20px;
+    color: rgb(105, 205, 238);
+}
+
+hr{
+    opacity: 50%;
+    padding-top: -20px;
+    border-top: #111;
+}
+
+@media (max-width: 1074px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+
+    img{
+        height: 50%; 
+        width: 50%; 
+    }
+  
+  .first h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.first p{
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.info{
+    width: 70%;
+    left: 10%;
+  }
+
+.one, .two{
+    width: 80%;
+    left: 10%;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+  
+    span{
+      padding-left: 0px;
+  }
+
+  .main{
+    position: absolute;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.first p{
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.first{
+    text-align: left;
+    width: 90%;
+}
+
+.size1{
+    height: 20px;
+}
+
+.second{
+    display: none;
+}
+
+.row{
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+}
+
+@media (max-width: 920px) {
+    nav{
+        padding: 0 40px 0 50px;
+      }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+  nav ul{
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: rgb(213, 213, 213);;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li{
+    width: 100%;
+  }
+
+  nav ul li a{
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: darkblue;
+  }
+
+  .row{
+    flex-basis: 50%;
+    margin: 10px;
+}
+
+  .first{
+    padding: 20px;
+    text-align: left;
+    margin-left: 0px;
+    width: 90%;
+}
+
+.box{
+    width: 80%;
+    background-color: rgb(247, 248, 254);
+    left: 10%;
+    /* margin-top: 50px; */
+}
+
+.box{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 400px;
+    background-color: rgb(247, 248, 254);
+    left: 3%;
+    border-radius: 10px;
+}
+
+.go{
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.go img{
+    width: 40%;
+}
+
+.btn{
+    margin-top: 50px;
+    width: 80%;
+    left: 10%;
+
+    /* bottom: 20px; */
+}
+
+.one, .two{
+    width: 100%;
+    left: 10%;
+    margin-bottom: 30px;
+}
+
+.info{
+    width: 80%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 554px) {
+    nav{
+      padding: 0 40px 0 50px;
+    }
+}
